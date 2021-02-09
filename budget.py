@@ -155,5 +155,7 @@ def create_spend_chart(categories):
             x_axis_labels = x_axis_labels + label[i] + '  '
         x_axis_labels = x_axis_labels + '\n'    
     
+    x_axis_labels = x_axis_labels.rstrip() + '  '
+    
     return ('Percentage spent by category\n' + line_100 + '\n' + line_90 + '\n' + line_80 + '\n' + line_70 + '\n' + line_60 + '\n' + line_50 + '\n' + 
            line_40 + '\n' + line_30 + '\n' + line_20 + '\n' + line_10 + '\n' + line_0 + '\n' + line_dash + '\n' + x_axis_labels)
